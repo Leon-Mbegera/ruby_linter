@@ -23,6 +23,11 @@ class Stylint
       start_bracket_check(line, column)
       end_bracket_check(line, column)
     end
+    if @errors.length.zero?
+      @errors << "All checks have passed. ".green
+    else
+      @errors.sort {|ele1, ele2| ele1 <=> ele2}
+    end
 
   end
 end
