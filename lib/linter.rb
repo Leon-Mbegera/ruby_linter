@@ -1,5 +1,5 @@
 require 'colorize'
-require_relative '..lib/style_linter'
+require_relative('../lib/style_linter')
 
 class Stylint 
   include StyleLinter
@@ -11,12 +11,12 @@ class Stylint
 
   def check
     column = 0
-    File.readlines(@file_path) do |line|
+    File.readlines(@file_path).each do |line|
       column += 1
       comment_check(line, column)
       ending_check(line, column)
       colon_space_check(line, column)
-      empty_space(line, column)
+      empty_space_check(line, column)
       unit_check(line, column)
       space_check(line, column)
       start_space_check(line, column)
