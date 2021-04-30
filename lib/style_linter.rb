@@ -14,5 +14,9 @@ module StyleLinter
     @errors << "#{'ERROR'.red} :Two spaces needed at the start of line #{num}\n"
   end
 
-  
+  def unit_check(line, num)
+    return unless line.include?(px)
+
+    @errors << "#{'WARNING'.yellow} :Recommended use of rem or em for responsiveness on line #{num}\n"
+  end
 end
