@@ -39,4 +39,11 @@ module StyleLinter
 
     @errors << "#{'ERROR'.red} :Expected '{' at the end of line #{num}. Any more code should fall on next line.\n"
   end
+
+  def end_bracket_check(line, num)
+    stripped = line.delete('\n')
+    return unless line.include?('}') && !stripped.end_with?('}')
+
+    @errors << "#{'ERROR'.red} :Expected '}' at the end of line #{num}"
+  end
 end
