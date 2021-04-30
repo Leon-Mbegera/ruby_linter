@@ -25,4 +25,11 @@ module StyleLinter
 
     @errors << "#{'ERROR'.red} :Remove empty space at start of line #{num}\n"
   end
+
+  def colon_space_check(line, num)
+    return unless line.include?(':')
+
+    point = line.split(':')[1]
+     @errors = "#{'ERROR'.red} :Extra space needed after colon on line #{num}" if point[0] != ' '
+  end
 end
