@@ -19,4 +19,10 @@ module StyleLinter
 
     @errors << "#{'WARNING'.yellow} :Recommended use of rem or em for responsiveness on line #{num}\n"
   end
+
+  def start_space_check(line, num)
+    return unless line.start_with?(' ') && (line.end_with?('.') || line.end_with?('}'))
+
+    @errors << "#{'ERROR'.red} :Remove empty space at start of line #{num}\n"
+  end
 end
