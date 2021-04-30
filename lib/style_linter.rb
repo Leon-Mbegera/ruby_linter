@@ -44,6 +44,13 @@ module StyleLinter
     stripped = line.delete('\n')
     return unless line.include?('}') && !stripped.end_with?('}')
 
-    @errors << "#{'ERROR'.red} :Expected '}' at the end of line #{num}"
+    @errors << "#{'ERROR'.red} :Expected '}' at the end of line #{num}\n"
+  end
+
+  def empty_space_check(line, num)
+    stripped = line.delete('\n')
+    return unless stripped.end_with?(' ')
+
+    @errors << "#{'ERROR'.red} :Remove trailing spaces at end of line #{num}\n"
   end
 end
