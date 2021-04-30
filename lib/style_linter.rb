@@ -30,6 +30,13 @@ module StyleLinter
     return unless line.include?(':')
 
     point = line.split(':')[1]
-     @errors = "#{'ERROR'.red} :Extra space needed after colon on line #{num}" if point[0] != ' '
+    @errors << "#{'ERROR'.red} :Extra space needed after colon on line #{num}" if point[0] != ' '
+  end
+
+  def start_bracket_check(line, num)
+    stripped = line.delete('\n')
+    return unless line.include?('{') && !stripped.end_with?('{')
+
+    @errors << "#{'ERROR'.red} :Expected '{' at the end of line #{num}. Any more code should fall on next line.\n"
   end
 end
