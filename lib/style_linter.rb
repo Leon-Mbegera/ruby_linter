@@ -53,4 +53,13 @@ module StyleLinter
 
     @errors << "#{'ERROR'.red} :Remove trailing spaces at end of line #{num}\n"
   end
+
+  def ending_check(line, num)
+    if line.include?(':') && !line.include?(';')
+      @errors << "#{'ERROR'.red} :Expected ; at the end of rule on line #{num}\n"
+    elsif
+      line.include?(';') && !line.include?(':')
+      @errors << "#{'ERROR'.red} :Expected : at the end of attribute declaration on line #{num}\n"
+    end
+  end
 end
