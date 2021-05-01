@@ -1,0 +1,41 @@
+/* My styles */
+
+.first-nav {
+  height: 2rem;
+  padding: 2px;
+}
+
+.second-nav {
+  margin-bottom: 3rem;
+   }
+
+.intro-heading {
+  font-size: 20px;
+  color: purple;
+  text-align: center;
+  padding: 5px;
+}
+
+.top-article{
+  font:3em;
+  padding: 2rem;
+}
+
+.bottom-article{font-size: 2rem;}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4rem
+}
+
+.media-icons a {  
+  padding: 8rem;
+  color: black;
+  background-color: #11111115;
+  border: 1rem solid #fff;
+  border-radius: 50em;  
+}
+
+.top-footer {
+  background-color: black;
+}.bottom-footer
