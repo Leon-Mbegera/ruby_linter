@@ -1,10 +1,10 @@
 require 'colorize'
 require_relative('../lib/style_linter')
 
-class Stylint 
+class Stylint
   include StyleLinter
 
-  def initialize(file_path) 
+  def initialize(file_path)
     @file_path = file_path
     @errors = []
   end
@@ -24,7 +24,7 @@ class Stylint
       end_bracket_check(line, num)
     end
     if @errors.length.zero?
-      @errors << "All checks have passed. ".green
+      @errors << 'All checks have passed. '.green
     else
       @errors.sort { |el1, el2| el2 <=> el1 }
     end

@@ -2,8 +2,7 @@ require_relative '../lib/linter'
 require_relative '../lib/style_linter'
 
 describe Stylint do
-
-  let(:checker) { Stylint.new('../Assets/bad_styles.css')}
+  let(:checker) { Stylint.new('../Assets/bad_styles.css') }
 
   describe '#comment check method' do
     context 'when there is comment' do

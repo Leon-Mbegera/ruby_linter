@@ -1,7 +1,6 @@
 require 'colorize'
 
 module StyleLinter
-
   def comment_check(line, num)
     return unless line.include?('/*')
 
@@ -57,8 +56,7 @@ module StyleLinter
   def ending_check(line, num)
     if line.include?(':') && !line.include?(';')
       @errors << "#{'ERROR'.red} :Expected ; at the end of rule on line #{num}\n"
-    elsif
-      line.include?(';') && !line.include?(':')
+    elsif line.include?(';') && !line.include?(':')
       @errors << "#{'ERROR'.red} :Expected : at the end of attribute declaration on line #{num}\n"
     end
   end
