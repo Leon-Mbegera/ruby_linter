@@ -9,13 +9,13 @@ module StyleLinter
   end
 
   def space_check(line, num)
-    return unless line ~= /\A\w/ && !line.start_with?(' ')
+    return unless line =~ /\A\w/ && !line.start_with?(' ')
 
     @errors << "#{'ERROR'.red} :Two spaces needed at the start of line #{num}\n"
   end
 
   def unit_check(line, num)
-    return unless line.include?(px)
+    return unless line.include?('px')
 
     @errors << "#{'WARNING'.yellow} :Recommended use of rem or em for responsiveness on line #{num}\n"
   end

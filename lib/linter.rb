@@ -6,7 +6,7 @@ class Stylint
 
   def initialize(file_path) 
     @file_path = file_path
-    @error = []
+    @errors = []
   end
 
   def check
@@ -20,14 +20,13 @@ class Stylint
       unit_check(line, num)
       space_check(line, num)
       start_space_check(line, num)
-      start_bracket_check(line, column)
+      start_bracket_check(line, num)
       end_bracket_check(line, num)
     end
     if @errors.length.zero?
       @errors << "All checks have passed. ".green
     else
-      @errors.sort {|ele1, ele2| ele1 <=> ele2}
+      @errors.sort { |el1, el2| el2 <=> el1 }
     end
-
   end
 end
