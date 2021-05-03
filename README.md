@@ -4,7 +4,7 @@
 - In this project, I have emulated the purpose of a linter file in checking for errors in code syntax and flow.
 - The program identifies the errors and informs the user about required correction from the terminal.
 
-![image](../Assets/images/output.png)
+![screenshot](./Assets/images/output.png)
 
 ## Built with
 - Ruby Language
@@ -30,7 +30,7 @@
 
 | Bad CSS file | Clean CSS File |
 |:---:|:---:|
-| ![screenshot](../Assets/images/badfile.png) |![screenshot](../Assets/images/cleanfile.png) |
+| ![screenshot](./Assets/images/badfile.png) |![screenshot](./Assets/images/cleanfile.png) |
 
 ## Author
 
