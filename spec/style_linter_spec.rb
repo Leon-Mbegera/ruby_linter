@@ -2,7 +2,7 @@ require_relative '../lib/linter'
 require_relative '../lib/style_linter'
 
 describe Stylint do
-  let(:checker) { Stylint.new('../Assets/bad_styles.css') }
+  let(:checker) { Stylint.new('Assets\Example1.css') }
 
   describe '#comment check method' do
     context 'when there is comment' do
@@ -57,7 +57,7 @@ describe Stylint do
   describe '#start bracket check method' do
     context 'when there is two spaces' do
       it 'checks for two spaces before { ' do
-        contain = checker.send(:start_bracket_check, '{', 26)
+        contain = checker.send(:start_bracket_check, '{', 12)
         expect(contain).not_to eq(['Expected { at the end of line 26. Any more code should fall on next line.'])
       end
     end
@@ -66,7 +66,7 @@ describe Stylint do
   describe '#end bracket check method' do
     context 'when there is no text after closing bracket' do
       it 'checks for no space nor text after closing bracket' do
-        contain = checker.send(:end_bracket_check, '}', 26)
+        contain = checker.send(:end_bracket_check, '}', 17)
         expect(contain).not_to eq(['Expected } at the end of line 26'])
       end
     end

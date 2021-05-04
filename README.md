@@ -17,9 +17,9 @@
 - Install ruby colorize gems by running `gem install colorize`
 - To start the linter check, run `ruby bin/main.rb` in your terminal
 - Give the path to one of the files in Assets folder and press Enter.
-- In this project: the linter checks for offenses in CSS file
-      1. Example1.css is a CSS file with errors that will inform user to make corrections.
-      2. Example2.css is a clean CSS file that passes all checks.
+- In this project: the linter checks for offenses in CSS file.
+- Example1.css is a CSS file with errors that will inform user to make corrections.
+- Example2.css is a clean CSS file that passes all checks.
 - You'll see a list of Warnings and Errors of your terminal as pertaining to that file.
 
 ## Examples of Implemented checks
