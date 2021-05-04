@@ -1,32 +1,35 @@
 /* My styles */
-
-.first-nav {
-  height: 2rem;
-  padding: 2px;
+.first-nav-bar {
+  height: 100px;
 }
-
-.second-nav {
+.second-nav-bar {
   margin-bottom: 3rem;
-   }
+}
 
 .intro-heading {
   font-size: 20px;
   color: purple;
   text-align: center;
   padding: 5px;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 50px;
 }
 
-.top-article{
+  .top-article {
   font:3em;
-  padding: 2rem;
-}
+  }
+
+.middle-article {
+  box-sizing:border-box;
+  }
 
 .bottom-article{font-size: 2rem;}
 
-p {
+.side-article {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 4rem
-}
+}.newsletter
+
 
 .media-icons a {  
   padding: 8rem;
