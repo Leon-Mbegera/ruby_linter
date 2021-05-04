@@ -15,8 +15,11 @@
 - Clone the repository into your local machine from the terminal of your text editor e.g. VS Code
 - The project should open its folders and files in your editor window.
 - Install ruby colorize gems by running `gem install colorize`
-- To start the linter check, run `bin/main.rb` in your terminal
-- Give the relative path to one of the files in Assets folder and press Enter.
+- To start the linter check, run `ruby bin/main.rb` in your terminal
+- Give the path to one of the files in Assets folder and press Enter.
+- In this project: the linter checks for offenses in CSS file
+      1. Example1.css is a CSS file with errors that will inform user to make corrections.
+      2. Example2.css is a clean CSS file that passes all checks.
 - You'll see a list of Warnings and Errors of your terminal as pertaining to that file.
 
 ## Examples of Implemented checks
@@ -27,10 +30,20 @@
   - Closing bracket check: Checks closing } is on seperate line.
   - Unit check: Checks and recommends use of rem and em instead of px.
 
-
-| Bad CSS file | Clean CSS File |
-|:---:|:---:|
-| ![screenshot](./Assets/images/badfile.png) |![screenshot](./Assets/images/cleanfile.png) |
+### *Comment check*
+*Bad code*
+ ``
+ /* My styles */
+.first-nav-bar {
+  height: 100px;
+}
+``
+*Accepted code*
+``
+.first-nav-bar {
+  height: 100rem;
+}
+``
 
 ## Author
 
@@ -54,8 +67,10 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to Microverse.
 
-## 📝 License
+## 📝 License 
+This is a solo Ruby capstone project as a Microverse Student.
+All rights reserved for Leon Mbegera.
 
-This project is [MIT](./LICENSE) licensed.
+
 
 
