@@ -31,19 +31,123 @@
   - Unit check: Checks and recommends use of rem and em instead of px.
 
 ### *Comment check*
+- Should be no comments
 *Bad code*
- ``
+ ```
  /* My styles */
 .first-nav-bar {
   height: 100px;
 }
-``
-*Accepted code*
-``
+```
+**Accepted code**
+```
 .first-nav-bar {
   height: 100rem;
 }
-``
+```
+
+### ***Space check***
+*- There should be two spaces before attribute.*
+
+> **Bad code:**
+```
+.second-nav-bar {
+margin-bottom: 3rem;
+}
+```
+
+> **Accepted code:**
+```
+.second-nav-bar {
+  margin-bottom: 3rem;
+}
+```
+
+### ***Unit check***
+- Recommended use of rem, or em instead of px.*
+
+> **Bad code:**
+```
+.second-nav-bar {
+  margin-bottom: 30px;
+}
+```
+
+> **Accepted code:**
+```
+.second-nav-bar {
+  margin-bottom: 8rem;
+}
+```
+
+### Ending check
+- Include ; at end of 'attribute: value' assignment line.
+
+> **Bad code:**
+```
+.top-footer {
+  background-color: black
+}
+```
+> **Accepted code:**
+```
+.top-footer {
+  background-color: black;
+}
+```
+
+### Trailing space check
+- Should be no extra empty spaces at end of line
+
+> **Bad code:**
+```
+.media-icons a {  
+  padding: 8rem;
+  color: black;
+  background-color: #11111115;
+  border: 1rem solid #fff;
+  border-radius: 50em;  
+}
+
+```
+> **Accepted code:**
+```
+.media-icons a {  
+  padding: 8rem;
+  color: black;
+  background-color: #11111115;
+  border: 1rem solid #fff;
+  border-radius: 50em;  
+}
+```
+
+**Opening bracket check**
+- Should have Opening bracket { at end or rule declaration. Any more code should fall on next lines.
+
+> **Bad code:**
+```
+.bottom-article{font-size: 2rem;}
+```
+> **Accepted code:**
+```
+.bottom-article {
+  font-size: 2rem;
+}
+```
+### Closing bracket check
+should have closing bracket } on separate line from other code.
+> **Bad code:**
+```
+.side-article {
+  font-family: 'Courier New', Courier, monospace;
+}.newsletter
+```
+> **Accepted code:**
+```
+.side-article {
+  font-family: 'Courier New', Courier, monospace;
+}
+```
 
 ## Author
 
