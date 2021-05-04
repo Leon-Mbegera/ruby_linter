@@ -1,0 +1,44 @@
+.first-nav-bar {
+  height: 100rem;
+}
+.second-nav-bar {
+  margin-bottom: 3rem;
+}
+
+.intro-heading {
+  font-size: 20rem;
+  color: purple;
+  text-align: center;
+  padding: 5em;
+  justify-content: center;
+  margin-top: 24rem;
+  margin-bottom: 50rem;
+}
+
+.top-article {
+  font: 3em;
+}
+
+.middle-article {
+  box-sizing: border-box;
+}
+
+.bottom-article {
+  background-image: 16em;
+}
+
+.side-article {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.media-icons {
+  padding: 8rem;
+  color: black;
+  background-color: #11111115;
+  border: 1rem solid #fff;
+  border-radius: 50em;
+}
+
+.top-footer {
+  background-color: black;
+}
