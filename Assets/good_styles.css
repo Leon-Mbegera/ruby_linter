@@ -1,32 +1,37 @@
-.first-nav {
-  height: 2rem;
-  padding: 2rem;
+.first-nav-bar {
+  height: 100rem;
 }
-
-.second-nav {
+.second-nav-bar {
   margin-bottom: 3rem;
 }
 
 .intro-heading {
-  font-size: 20px;
+  font-size: 20rem;
   color: purple;
   text-align: center;
-  padding: 5px;
+  padding: 5em;
+  justify-content: center;
+  margin-top: 24rem;
+  margin-bottom: 50rem;
 }
 
 .top-article {
   font: 3em;
-  padding: 2rem;
 }
 
-.bottom-article{font-size: 2rem;}
+.middle-article {
+  box-sizing: border-box;
+}
 
-p {
+.bottom-article {
+  background-image: 16em;
+}
+
+.side-article {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 4rem;
 }
 
-.media-icons a {  
+.media-icons {
   padding: 8rem;
   color: black;
   background-color: #11111115;
