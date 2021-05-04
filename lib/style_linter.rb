@@ -20,7 +20,9 @@ module StyleLinter
   end
 
   def start_space_check(line, num)
-    @errors << "#{'ERROR'.red}  :Remove empty space at start of line #{num}\n " if line.start_with?(' ') && (line.include?('.') || line.include?('}'))
+    return unless line.start_with?(' ') && (line.include?('.') || line.include?('}'))
+
+    @errors << "#{'ERROR'.red}  :Remove empty space at start of line #{num}\n"
   end
 
   def colon_space_check(line, num)
