@@ -149,6 +149,10 @@ should have closing bracket } on separate line from other code.
 }
 ```
 
+## Run test cases
+- Install rspec from terminal running `gem install rspec`
+- Run test cases by typing `rspec` in terminal
+
 ## Author
 
 👤 **Leon**
